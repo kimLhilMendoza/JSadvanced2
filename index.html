@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mendoza Javascript Advanced 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Javascript Web Output #2</h1>
+    <table id="tblInput">
+        <tr>
+            <td width="45%">
+                <label for="txtFname">First Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Middle Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Last Name:</label>
+            </td>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="">Age:</label>
+            </td>
+            <td>
+                <input type="number">
+            </td>
+        </tr>
+
+        <tr style="height:20px;">
+            <td>
+ 
+            </td>
+            <td style="padding-top: 15px;">
+                <button id="btnInsertUpdate" value="insert">Insert</button>
+                <button id="btnClear">Clear</button>
+            </td>
+        </tr>
+    </table>
+    <br>
+
+    <fieldset>
+        <legend>Records</legend>
+        <p id="status"></p>
+        <table id="tblRecords" style="border-collapse: collapse; margin: auto;">
+        </table>
+    </fieldset>
+
+    <button id="btnClearItems" style="margin-top: 10px;">Clear Records</button>
+    <label>Sort by:</label>
+    <select id="lastNameDropdown" onchange="filterByLastName()">
+        <option value="">Last Name</option>
+    </select>
+    <select id="letterDropdown" onchange="filterByLetter()">
+        <option value="">A-Z</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="H">H</option>
+        <option value="I">I</option>
+        <option value="J">J</option>
+        <option value="K">K</option>
+        <option value="L">L</option>
+        <option value="M">M</option>
+        <option value="N">N</option>
+        <option value="O">O</option>
+        <option value="P">P</option>
+        <option value="Q">Q</option>
+        <option value="R">R</option>
+        <option value="S">S</option>
+        <option value="T">T</option>
+        <option value="U">U</option>
+        <option value="V">V</option>
+        <option value="W">W</option>
+        <option value="X">X</option>
+        <option value="Y">Y</option>
+        <option value="Z">Z</option>
+    </select>
+
+
+    <button onclick="saveToLocal()">Save to Local Storage</button>
+    <script src="main.js"></script>
+</body>
+</html>
